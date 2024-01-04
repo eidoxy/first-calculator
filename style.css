@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.display {
+    width: 100%;
+    padding: 0px 20px;
+    margin-bottom: 1px;
+    border: 1px solid black;
+    font-size: 2em;
+    color: white;
+    background-color: black;
+}
+
+input#result {
+    text-align: right;
+    padding-right: 20px;
+    width: 100%;
+    border: none;
+}
+
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba( 0, 0, 0, 0.2);
+    border-radius: 2px;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+input {
+    width: 130px;
+    height: 120px;
+    flex-basis: 25%;
+    font-size: 2em;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    border: 1.5px solid white;
+    background: black;
+    cursor: pointer;
+}
+
+.button:hover {
+    font-weight: bold;
+    background: #b8b8b8;
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+.negative, 
+.equals, 
+.operator {
+    background: orange;
+}
+
+.negative:hover,
+.equals:hover,
+.operator:hover {
+    background: #ffd200;
+}
+
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+}

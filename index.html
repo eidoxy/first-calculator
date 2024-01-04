@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="flex-container-column card">
+        <div class="display">
+            <input type="text" id="result" disabled>
+        </div>
+        <div class="flex-container-row">
+            <input type="button" class="clear" value="CE" onclick="clearResult()">
+            <input type="button" class="delete" value="DEL" onclick="deleteLast()">
+            <input type="button" class="operator" value="%" onclick="appendOperator('%')">
+            <input type="button" class="operator" value="/" onclick="appendOperator('/')">
+        </div>
+        <div class="flex-container-row">
+            <input type="button" class="num" value="7" onclick="appendNumber(7)">
+            <input type="button" class="num" value="8" onclick="appendNumber(8)">
+            <input type="button" class="num" value="9" onclick="appendNumber(9)">
+            <input type="button" class="negative" value="x" onclick="appendOperator('*')">
+        </div>
+        <div class="flex-container-row">
+            <input type="button" class="num" value="4" onclick="appendNumber(4)">
+            <input type="button" class="num" value="5" onclick="appendNumber(5)">
+            <input type="button" class="num" value="6" onclick="appendNumber(6)">
+            <input type="button" class="operator" value="-" onclick="appendOperator('-')">
+        </div>
+        <div class="flex-container-row">
+            <input type="button" class="num" value="1" onclick="appendNumber(1)">
+            <input type="button" class="num" value="2" onclick="appendNumber(2)">
+            <input type="button" class="num" value="3" onclick="appendNumber(3)">
+            <input type="button" class="operator" value="+" onclick="appendOperator('+')">
+        </div>
+        <div class="flex-container-row">
+            <input type="button" class="num" value="00" onclick="appendNumber(0o0)">
+            <input type="button" class="num" value="0" onclick="appendNumber(0)">
+            <input type="button" class="num" value="." onclick="appendDecimal()">
+            <input type="button" class="operator" value="=" onclick="calculateResult()">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
